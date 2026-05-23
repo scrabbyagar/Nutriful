@@ -1,0 +1,6 @@
+{
+  "name": "Fridge Scan AI",
+  "description": "Capture or upload fridge ingredients to instantly detect groceries, estimate quantities, and generate personalized, nutrient-tracked recipes in real-time.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

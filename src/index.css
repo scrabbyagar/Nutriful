@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&family=JetBrains+Mono:wght@150..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-sage: #7FAF8E;
+  --color-mint: #DDEFE2;
+  --color-warm-orange: #F4A261;
+  --color-off-white: #F8FAF7;
+  --color-charcoal: #1F2933;
+  --color-muted-gray: #6B7280;
+  --color-light-gray-green: #E5ECE7;
+  --color-fresh-green: #5FA777;
+  --color-protein: #E97B63;
+  --color-carbs: #E9C46A;
+  --color-fat: #DDA15E;
+  
+  --font-sans: "Inter", "SF Pro Display", -apple-system, sans-serif;
+  --font-display: "Space Grotesk", "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --font-serif: "Playfair Display", "Georgia", serif;
+}
+
+body {
+  background-color: var(--color-off-white);
+  color: var(--color-charcoal);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom styling for scan overlays & sleek modern visual details */
+.scanner-ray {
+  background: linear-gradient(180deg, rgba(127, 175, 142, 0) 0%, rgba(127, 175, 142, 0.4) 50%, rgba(127, 175, 142, 0) 100%);
+}
+
+.glow-subtle {
+  box-shadow: 0 4px 30px rgba(127, 175, 142, 0.08);
+}
+
+/* Animated scanning lines */
+@keyframes scan {
+  0% { transform: translateY(-10%); }
+  50% { transform: translateY(210%); }
+  100% { transform: translateY(-10%); }
+}
+
+.animate-scan-line {
+  animation: scan 3.5s ease-in-out infinite;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F8FAF7;
+}
+::-webkit-scrollbar-thumb {
+  background: #E5ECE7;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #7FAF8E;
+}
+
